@@ -12,8 +12,8 @@ df = pd.read_csv(
     'ce/85e96d35-07fe-4752-9062-26607e0850d9/download/schulerinnen.csv',
     sep=';',
     engine='python',
+    # chunksize=1000,
     index_col=0)
-
 df
 
 # %%
@@ -71,7 +71,6 @@ for key, value in world.items():
 
 # %%
 # Iterate over merged Numpy Arrays with nditer()
-import numpy as np
 np_one = np.array([1.34, 1.23, 4.535, 23.45])
 np_two = np.array([2.34, 3.23, 4.535, 23.45])
 combined = np.array([np_one, np_two])
@@ -82,3 +81,31 @@ for val in np.nditer(combined):
 # Iterate over Pandas DataFrame with iterrows()
 df['len_gender'] = df['Geschlecht'].apply(len)
 df
+
+# %%
+# Random numbers
+np.random.seed(24)
+rand = np.random.randint(3)
+print(rand)
+
+# %%
+# Lambda functions
+nums = [48, 7, 9, 10]
+square_all = map(lambda num: num ** 2, nums)
+print(list(square_all))
+
+# %%
+# Functions excpetions
+
+
+def sqrt(x):
+    """Returns the square root of a number"""
+    if x < 0:
+        raise ValueError('x must be non-negative')
+    try:
+        return x ** 0.5
+    except TypeError:
+        print('x must be an int or float')
+
+
+sqrt(-1)
