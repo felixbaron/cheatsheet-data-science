@@ -33,6 +33,14 @@ df[1:4]
 df.iloc[[4, 9]]
 df.iloc[[4, 9], [1, 4]]
 
+# %%
+# Explore dataset
+df.head()
+df.info()
+df.shape
+df.describe()
+df.index
+
 # Show all rows, but only 2 columns
 df.loc[:, ['Nationalität', 'Geschlecht']]
 
