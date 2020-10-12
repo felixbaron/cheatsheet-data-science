@@ -2,12 +2,13 @@
 # Sorting in python
 import pandas as pd
 
-file_name = ''
 df = pd.read_csv(file_name,
                  decimal=',',
                  sep=';',
                  thousands='.'
                  )
+
+# Sort ascending or descending
 df[['Sender / Empfänger', 'Betrag in EUR']
    ].sort_values('Betrag in EUR', ascending=True)
 
