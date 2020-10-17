@@ -2,11 +2,11 @@
 
 This repository contains the Docker basic commands.
 
-## Push docker container
+## Push docker image
 
 ```Shell
 docker tag my-image febaron/image
-docker push image
+docker push febaron/image
 ```
 
 ## Managing volumes
