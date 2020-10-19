@@ -54,7 +54,7 @@ kubectl port-forward zeppelin-controller-dlwml 8080:8080 -n spark-cluster #&
 ## Run Thrift server (ODBC)
 
 ```shell
-kubectl port-forward spark-master-controller-wgx6h 1000:1000 -n spark-cluster #&
+kubectl port-forward spark-master-controller-ld7c7 10000:10000 -n spark-cluster #&
 ```
 
 ## Delete Spark cluster
