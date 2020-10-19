@@ -17,9 +17,10 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube status
 ```
 
-## Start minikube
+## Start/stop minikube
 
 ```shell
+minikube stop
 minikube start
 ```
 
