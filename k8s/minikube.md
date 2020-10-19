@@ -35,3 +35,9 @@ minikube dashboard
 minikube addons list
 minikube addons enable addon
 ```
+
+### MetalLB
+
+```shell
+minikube addons enable metallb
+```
