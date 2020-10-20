@@ -15,6 +15,13 @@
 ## Read data with Hive SQL
 
 ```python
+from pyspark.sql import SparkSession
+spark = SparkSession.builder \
+    .appName('appName') \
+    .config('spark.driver.port', 8080) \
+    .config('spark.driver.host', '127.0.0.1') \
+    .getOrCreate()
+rddFromFile = spark.sparkContext.textFile("hdfs://127.0.0.1/text01.txt")
 
 ```
 
