@@ -39,11 +39,10 @@ kubectl port-forward spark-master-controller-rbldp 10000:10000 -n spark-cluster 
 ```shell
 kubectl proxy --port=8001 -n spark-cluster
 ```
-
-Then visit [http://localhost:8001/api/v1/proxy/namespaces/spark-cluster/services/spark-ui-proxy/](http://localhost:8001/api/v1/proxy/namespaces/spark-cluster/services/spark-ui-proxy/)
+Then visit [http://127.0.0.1:8001/api/v1/namespaces/spark-cluster/services/http:spark-master:8080/proxy/](http://127.0.0.1:8001/api/v1/namespaces/spark-cluster/services/http:spark-master:8080/proxy/)
 
 ### Run Zeppelin
 
 ```shell
-kubectl port-forward zeppelin-controller-dlwml 8080:8080 -n spark-cluster #&
+kubectl port-forward zeppelin-controller-r6bz8 8080:8080 -n spark-cluster #&
 ```
