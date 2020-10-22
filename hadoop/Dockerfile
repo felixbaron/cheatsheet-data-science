@@ -52,4 +52,6 @@ ENTRYPOINT service ssh start \
     && $HADOOP_HOME/sbin/start-yarn.sh \
     && while true; do sleep 1000; done
 
+# See https://stackoverflow.com/a/28214133/11773883
+# TODO: check if better https://stackoverflow.com/a/31143261/11773883
 EXPOSE 8088 50070
