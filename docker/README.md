@@ -2,16 +2,34 @@
 
 This repository contains the Docker basic commands.
 
-## Push docker image
+## Build Docker image
 
-```Shell
+```shell
+docker build -t myimage:1.0 .
+```
+
+## Push Docker image
+
+```shell
 docker tag my-image febaron/image
 docker push febaron/image
 ```
 
+## SSH into container
+
+```shell
+docker exec -it container # /bin/bash
+```
+
+## Run container
+
+```shell
+docker container run --name containername -p 5000
+```
+
 ## Managing volumes
 
-```Shell
+```shell
 # Create a volume
 docker volume create volumename
 
