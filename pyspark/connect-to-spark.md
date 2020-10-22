@@ -26,6 +26,14 @@ conf = SparkConf()\
 sc = SparkContext(conf=conf)
 ```
 
+### Create data DataFrame
+
+```python
+df = spark.read.json('example.json')
+df.printSchema()
+df.select("address").show()
+```
+
 ### Write data
 
 ```python
