@@ -2,9 +2,11 @@
   <property>
     <name>dfs.replication</name>
     <value>1</value>
-    <name>dfs.name.dir</name>
+    <!-- <name>dfs.permissions</name>
+    <value>false</value> -->
+    <!-- <name>dfs.name.dir</name>
     <value>file:///home/hadoop/hdfs/namenode</value>
     <name>dfs.data.dir</name>
-    <value>file:///home/hadoop/hdfs/datanode</value>
+    <value>file:///home/hadoop/hdfs/datanode</value> -->
   </property>
 </configuration>
