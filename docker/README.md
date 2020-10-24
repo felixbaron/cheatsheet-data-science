@@ -27,6 +27,13 @@ docker exec -it container # /bin/bash
 docker container run --name containername -p 5000
 ```
 
+## Remove all unused containers/images
+
+```shell
+docker container prune -f
+docker image prune -f -a
+```
+
 ## Managing volumes
 
 ```shell
